@@ -1,19 +1,26 @@
 package sk.stuba.fei.uim.oop;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        int[] pole = new int[10];
+        Scanner scan = new Scanner(System.in);
+        int a, b;
 
-        for(int i = 0; i< pole.length; i++){
-            pole[i] = i;
+
+        System.out.println("Hello wolrd");
+
+        System.out.println("Zadaj cislo a: ");
+        a = scan.nextInt();
+        System.out.println("Zadaj cislo b: ");
+        b = scan.nextInt();
+
+        if (a > b) {
+            System.out.println("1");
+        } else if (a == b) {
+            System.out.println("0");
+        } else if (a < b) {
+            System.out.println("-1");
         }
-
-        for(int i = 0; i< pole.length; i++){
-            App.vypis(i);
-        }
-    }
-
-    public static void vypis(int a) {
-        System.out.println(a);
     }
 }
