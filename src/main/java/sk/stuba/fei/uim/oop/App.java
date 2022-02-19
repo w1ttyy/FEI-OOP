@@ -7,9 +7,10 @@ public class App {
         Scanner scan = new Scanner(System.in);
         int a, b;
 
-
+        //1.1
         System.out.println("Hello wolrd");
 
+        //1.2
         System.out.println("Zadaj cislo a: ");
         a = scan.nextInt();
         System.out.println("Zadaj cislo b: ");
